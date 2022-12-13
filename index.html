@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhà Thông Minh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main id="main">
+      <div class="bg-gradient"></div>
+      <header id="header">
+        <a href="index.html">Home</a>
+        <a href="guildbook.html">Room</a>
+        <a href="baihat.html">Music</a>
+        <a href="camera.html">Video</a>
+        <a href="thoidiem.html">Weather</a>
+        <a href="light/index.html">SmartLight</a>
+        <a href="#" class="menu">
+          <img src="images/thing.svg" alt="" />
+          <button class="custom">
+            <a href="login.html">Log out</a>
+          </button> 
+        </a>
+      </header>
+      <section id="apps">
+        <div class="list">
+          <div class="box bg-green">
+            <div class="widget">
+        
+              <div class="widget-image">
+                <img src="images/ab.png" alt="" />
+              </div>
+              <div class="widget-info">
+                <h1>Guild book</h1>
+                <h3>Tutorial for smarthome</h3>
+                <h3>Giới thiệu bản thân</h3>
+                <button class="custom">
+                  <a href="guildbook.html">preview</a>
+                </button>
+                <button class="custom">
+                  <a href="https://wesmart.vn/tin-tuc/nhung-loi-ich-tuyet-voi-cua-giai-phap-nha-thong-minh-wesmart.html?fbclid=IwAR1gcihIiGHx0zziHFrA1Hjw1LdtESnRyO3Hcum68HL_3ikO1afrNbsB0Fs">Tin tức</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="box bg-blue">
+            <div class="widget">
+              <div class="widget-image">
+                <img
+                  id="weatherImg"
+                  src="images/Weather-No-Background.png"
+                  alt=""
+                />
+              </div>
+              <div class="widget-info">
+                <h3>City <span id="nameTxt"></span> :</h3>
+                <h1>
+                  Nhiệt độ ngoài trời: <span id="mainTempTxt"></span> độ C
+                </h1>
+                <h3>Windspeed: <span id="windSpeedTxt"></span></h3>
+                  <button class="custom">
+                    <a href="thoidiem.html">preview</a>
+                  </button>
+              </div>
+            </div>
+          </div>
+          <div class="box bg-light">
+            <div class="widget">
+              <div class="widget-image">
+                <img src="images/camera.png" alt="" />
+              </div>
+              <div class="widget-info">
+                <h1>Camera for small home</h1>
+                <h3>Camera giám sát nhà thông minh</h3>
+                <h3>Video có sẵn</h3>
+                <button class="custom">
+                  <a href="camera.html">preview</a>
+                </button> 
+              </div>
+            </div>
+          </div>
+          <div class="box bg-music">
+            <div class="widget">
+              <div class="widget-image">
+                <img src="images/music.png" alt="" />
+              </div>
+              <div class="widget-info">
+                <h1>Music</h1>
+                <h3>Love for life</h3>
+                <h3>Player nhạc có sẵn</h3>
+                <button class="custom">
+                  <a href="baihat.html">preview</a>
+                </button> 
+              </div>
+            </div>
+          </div>
+          <div class="box bg-mega">
+            <div class="widget">
+              <div class="widget-image">
+                <img src="images/at.png" alt="" />
+              </div>
+              <div class="widget-info">
+                <h1>Smart Light</h1>
+                <h3>Customer for life</h3>
+                <button class="custom">
+                  <a href="smartlight.html">preview</a>
+                </button>
+                <button class="open-modal-btn">
+                  <a href="#">Zoom</a>
+                </button>
+                <div class="modal hide">
+                  <div class="modal__inner">
+                    <div class="modal__header">
+                      <p>SmartLight</p>
+                      <i class="fas fa-times"></i>
+                    </div>
+                    <div class="modal__body">
+                      <h2>Chức năng chính</h2>
+                      <p>Điều chỉnh độ sáng và kết nối bluetooth</p>
+                    </div>
+                    <div class="modal__footer">
+                      <button>Close</button>
+                    </div>
+                  </div>
+                </div>  
+              </button>  
+              </div>
+            </div>
+          </div>
+          <div class="box bg-dark">
+            <div class="widget">
+              <div class="widget-image">
+                <img src="images/bz.png" alt="" />
+              </div>
+              <div class="widget-info">
+                <h1>Netflex</h1>
+                <h3>Watch things you want</h3>
+                <h3>This for you</h3>
+                <button class="custom">
+                  <a href="netflix.html">preview</a>
+                </button> 
+              </div>
+            </div>
+          </div>
+          <div class="box bg-dark">
+            <div class="widget">
+              <div class="widget-image">
+                <img src="images/calendar.png" alt="" />
+              </div>
+              <div class="widget-info">
+                <h1>Calendar</h1>
+                <h3>Look at picture</h3>
+            
+                <button class="custom">
+                  <a href="calendar.html">preview</a>
+                </button> 
+              </div>
+            </div>
+          </div>
+          <div class="box bg-map">
+            <div class="widget">
+              <div class="widget-image">
+                <iframe
+                  class="ao"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.3837439466633!2d105.48709051531459!3d21.097261790811256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345f2e11203e19%3A0xdd629cceaa0c04e7!2zVGjhuqNvIHZpw6puIFJlc29ydA!5e0!3m2!1svi!2sus!4v1664957204290!5m2!1svi!2sus"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="widget-info">
+                <h1>Maps</h1>
+                <h3>Where to Map</h3>
+                <button class="custom">
+                  <a href="maps.html">preview</a>
+                </button> 
+              </div>
+            </div>
+          </div>
+          <div class="box bg-music">
+            <div class="widget">
+              <div class="widget-image">
+                <img src="images/y.png" alt="" />
+              </div>
+              <div class="widget-info">
+                <h1>Youtube</h1>
+                <h3>Xem video</h3>
+                <h3>Highlights WorldCup</h3>
+                <button class="custom">
+                  <a href="youtube.html">preview</a>
+                </button> 
+                <button class="custom">
+                  <a href="https://codepen.io/cuongaoma/pen/MWXdbmz">World Cup</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="box bg-blue">
+            <div class="widget">
+              <div class="widget-image">
+                <img src="images/dubao.png" alt="" />
+              </div>
+              <div class="widget-info">
+                <h1>Dự báo thời tiết</h1>
+                <h3>Thời tiết các ngày gần nhất</h3>
+                <div class="b0">
+                  <button class="custom">
+                      <a href="weather1.html">preview</a>
+                  </button> 
+                  <button class="custom">
+                    <a href="weather.html">furture</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+          <div class="box bg-timeline">
+            <div class="widget">
+              <div class="widget-image">
+                <img src="images/timeline.png" alt="" />
+              </div>
+              <div class="widget-info">
+                <h1>Timeline</h1>
+                <h3>Tiến trình công việc</h3>
+                <button class="custom">
+                  <a href="timeline.html">preview</a>
+                </button> 
+                <button class="custom">
+                  <a href="todolist.html">Work</a>
+                </button> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <img src="" alt="" />
+        <div class="row">
+          <div class="col-3">
+            <div class="contact">
+              <button><a href="contact.html">Contact</a></button>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="contact">
+              <button><a href="review.html">Review </a></button>
+            </div>
+          </div>
+          <div class="col-3">
+            <a class="cy">City <span id="nameTxt1"></span> :</a>
+            <p>Nhiệt độ ngoài trời: <span id="mainTempTxt1"></span> độ C</p>
+          </div>
+          <div class="col-2">
+            <div class="datetime">
+              <div class="time"></div>
+              <div class="date"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="musicapp.js"></script>
+    <script src="xhr.js"></script>
+    <script src="time.js"></script>
+    <script src="main.js"></script>
+    <script src="src/index.js"></script>
+    <script src="custom.js"></script>
+  </body>
+</html>

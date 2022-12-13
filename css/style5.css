@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2e364a;
+}
+.timeline{
+    position: relative;
+    margin: 100px auto;
+}
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+.text-box{
+    padding : 20px 30px;
+    background: #fff;
+    position: relative;
+    font-size: 15px;
+}

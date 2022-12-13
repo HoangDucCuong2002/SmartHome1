@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment</title>
+    <link rel="stylesheet" href="css/comment.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h3>Contact me</h3>
+            <input name="name" type="text" placeholder="Your Name">
+            <input name="email" type="email" placeholder="Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit" name="myButton">Send</button>
+            <span id="msg"></span>
+        </form>
+    </div>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzrKm-QW6F9_AORX6BMa7i29SGHoFK0C8z9aMkstmUN3f60iL3nly8Ypb5EbuIwTfUs/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                mgs.innerHTML = "Thank you for your message"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
